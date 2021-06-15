@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.model.Position">
+    <children>
+        <Button fx:id="closing" layoutX="152.0" layoutY="65.0" mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #ff0000;" text="Отмена">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="adding" layoutX="18.0" layoutY="65.0" mnemonicParsing="false" onAction="#addingToTable" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #23e01f;" text="Добавить">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="label1" layoutX="18.0" layoutY="29.0" text="Название должности">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="namePosition" layoutX="186.0" layoutY="25.0" />
+      <Button fx:id="update" layoutX="287.0" layoutY="65.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #17abb3;" text="Изменить">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

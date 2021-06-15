@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="941.0" style="-fx-background-color: #7f8aa1;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="addButton" layoutX="155.0" layoutY="438.0" mnemonicParsing="false" onAction="#selectTableAdd" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #4779de; -fx-background-radius: 10px 10px 10px 10px;" text="Добавить">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.6" />
+         </effect>
+      </Button>
+      <Button fx:id="editButton" layoutX="310.0" layoutY="438.0" mnemonicParsing="false" onAction="#updateTable" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #4cd990; -fx-background-radius: 10px 10px 10px 10px;" text="Изменить" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.6" />
+         </effect>
+      </Button>
+      <Button fx:id="deleteButton" blendMode="SRC_ATOP" cache="true" layoutX="457.0" layoutY="438.0" mnemonicParsing="false" onAction="#buttonRemove" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #e64343; -fx-background-radius: 10px 10px 10px 10px;" text="Удалить" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.6" />
+         </effect>
+      </Button>
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="40.0" maxWidth="1.7976931348623157E308" prefHeight="376.0" prefWidth="650.0" style="-fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944); -fx-background-radius: 10px 10px 10px 10px;" />
+      <ComboBox fx:id="chooseTable" layoutX="665.0" layoutY="40.0" prefWidth="150.0" promptText="Выберите таблицу" style="-fx-background-color: #bfffc2;" visibleRowCount="12">
+         <effect>
+            <Reflection bottomOpacity="0.04" fraction="0.69" topOpacity="0.31" />
+         </effect></ComboBox>
+      <Button layoutX="8.0" layoutY="438.0" mnemonicParsing="false" onAction="#refresh" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #7243e8; -fx-background-radius: 10px 10px 10px 10px;" text="Обновить" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.62" />
+         </effect>
+      </Button>
+      <MenuBar prefHeight="25.0" prefWidth="941.0" style="-fx-background-color: #bfffc2;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+                  <Menu mnemonicParsing="false" text="Отчеты">
+                     <items>
+                    <MenuItem mnemonicParsing="false" onAction="#openView1" text="Блюда_в_доставке_Представление" />
+                        <MenuItem mnemonicParsing="false" onAction="#openView2" text="ПоставщикиПредставление" />
+                        <MenuItem mnemonicParsing="false" onAction="#openView3" text="ЗаказыДоступныхБлюд08102019" />
+                     </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Настройки">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#clearTable" text="Очистить" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="saver" layoutX="613.0" layoutY="438.0" mnemonicParsing="false" onAction="#saveDataInFile" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: #e3ff17; -fx-background-radius: 10px 10px 10px 10px;" text="Сохранить в файл" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.6" topOpacity="0.29" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.model.Purchase">
+   <children>
+      <Label layoutX="29.0" layoutY="29.0" text="Название ингредиента">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="64.0" text="Количество">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="104.0" text="Поставщик">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="150.0" text="Дата">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="192.0" text="Цена">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="nameIngredient" layoutX="226.0" layoutY="27.0" />
+      <TextField fx:id="count" layoutX="226.0" layoutY="62.0" />
+      <TextField fx:id="provider" layoutX="226.0" layoutY="102.0" />
+      <TextField fx:id="price" layoutX="226.0" layoutY="190.0" />
+      <DatePicker fx:id="date" layoutX="226.0" layoutY="148.0" />
+      <Button fx:id="add" layoutX="29.0" layoutY="239.0" mnemonicParsing="false" onAction="#addingToTable" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #23e01f;" text="Добавить">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="closing" layoutX="166.0" layoutY="239.0" mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #ff0000;" text="Отмена">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="update" layoutX="306.0" layoutY="239.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #17abb3;" text="Изменить">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
